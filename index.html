@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Practice</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
+<div class="container">
+    <div class ="content">
+        <h3> What is this?</h3>
+        <h4> I don't want this</h4>
+    </div>
+</div>
 </body>
+<script>
+    const content = document.querySelector('.content');
+    content.innerHTML ='<h1 class="gone">I love Zelda</h1><h4>I have no idea what to put here.</h4>';
+
+    const LOVE = document.createElement('h1');
+    LOVE.innerHTML='I love ICE CREAM';
+    content.appendChild(LOVE);
+
+    const ice = document.createElement('p');
+    ice.innerHTML='I WANT A COOKIE! I WANT A ICE CREAMMM!!!!!'
+    content.appendChild(ice)
+
+    const what = document.createElement('h2');
+    what.innerHTML='WHAT DID I DO'
+    content.appendChild(what)
+
+    const hello = document.createElement('h1');
+    hello.innerHTML='HELLOOO,PERSON '
+    content.appendChild(hello)
+
+    const food = document.createElement('h1');
+    food.innerHTML ='I love ICE CREAMM.'
+    content.insertAdjacentElement('afterend',food)
+
+    const unwantedElement = document.querySelector('h4')
+    unwantedElement.remove();
+
+    const unwantedElement2 = document.querySelector('.gone')
+    unwantedElement2.remove();
+</script>
 </html>
