@@ -16,28 +16,21 @@
         <div>
             <label for="last name"> last name</label>
                                 <input type="text" id="last name" name="last name" style="width: 100px;">
-            <button id="say">say hello</button>
+            <button id="hello">say hello</button>
+            <ul id="list"></ul>
         </div>
 
-</body>
+
 <script>
     const firstname = document.getElementById('first')
     const lastname = document.getElementById('last')
-    const full = document.querySelector('p')
-    const hello = document.getElementById('say')
-    const calculateButton = document.getElementById('calc');
+    const full = document.querySelector('list')
+    const hello = document.getElementById('hello ')
 
-    hello.addEventListener('click', function (e){
-        let first = firstname.value;
-        let last = lastname.value;
-        let fullname= `${first} ${last}!`;
-        if (fullname.length>1){
-            full.classList.remove("hidden")
-        } else{
-            full.classList.remove("hidden")
-        }
-        full.textContent =`hello ${fullname}!`;
-    });
+    hello.addEventListener('click',addname)
+    function addname(){
+
+    }
 
 </script>
 </body>
