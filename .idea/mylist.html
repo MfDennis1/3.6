@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyTurn1</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+  <div class ="content">
+
+    <div>
+      <label for="first name"> list</label>
+      <input type="text" id="first name" name="first name" style="width: 100px;">
+    </div>
+    <div>
+      <button id="hello">add item</button>
+      <ul id="list"></ul>
+    </div>
+
+
+    <script>
+      const firstname = document.querySelector('ul')
+
+      function additem(){
+
+      let newElement = document.createElement('li');
+
+      newElement.addEventListener('click', function (e){
+
+
+      });
+  firstname.appendChild(newElement)
+
+      }
+      hello.addEventListener('click', additem);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
